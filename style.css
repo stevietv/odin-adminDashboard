@@ -44,6 +44,34 @@ body {
     gap: 20px;
 }
 
+.notification-bar {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 40px;
+    margin-right: 100px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.search-bar {
+    display: flex;
+    column-gap: 30px;
+    margin-left: 10px;
+    margin-right: 40px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.search-bar input {
+    flex: 1;
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 4px 8px;
+    margin: 8px 0;
+}
+
 .main {
     display: grid;
     grid-template-rows: 100px auto;
@@ -75,4 +103,9 @@ input[type=button] {
     width: 150px;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.userIcon {
+    width: 40px;
+    height: 40px;
 }

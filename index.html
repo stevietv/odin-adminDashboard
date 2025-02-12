@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
 </head>
 
 <body>
@@ -33,8 +34,15 @@
     
         <div class="main">
             <div class="header">
-                <div>Search Bar</div>
-                <div>StevieTV</div>
+                <div class="search-bar">
+                    <iconify-icon icon="mdi:search" height="32"></iconify-icon>
+                    <input type="text" />
+                </div>
+                <div class="notification-bar">
+                    <iconify-icon icon="mdi:bell-ring-outline" height="32"></iconify-icon>
+                    <img src="userIcon.png" alt="User Icon" class="userIcon" />
+                    <div>StevieTV</div>
+                </div>
                 <div>Hi There StevieTV</div>
                 <div class="header-buttons">
                     <input type="button" value="New">
