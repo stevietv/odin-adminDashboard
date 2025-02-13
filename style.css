@@ -1,7 +1,7 @@
 /* Basis Definitions */
 
 :root {
-    --bg-color: rgb(79, 154, 252);
+    --bg-color: rgb(16, 154, 247);
 }
 
 * {
@@ -29,7 +29,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 3fr 6fr;
     align-items: start;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .sidebar-grid {
