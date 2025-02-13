@@ -30,6 +30,7 @@ body {
     grid-template-rows: 1fr 3fr 6fr;
     align-items: start;
     padding-top: 20px;
+    font-weight: 600;
 }
 
 .sidebar-grid {
