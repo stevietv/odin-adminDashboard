@@ -99,7 +99,7 @@ body {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
+    gap: 30px;
     flex: 1;
     padding: 30px;
 }
@@ -120,6 +120,22 @@ body {
     grid-auto-flow: column;
     column-gap: 30px;
     padding-right: 20px
+}
+
+.trending-list {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+}
+
+.trending-list-item {
+    display: grid;
+    grid-template: auto auto / 50px auto;
+    column-gap: 10px;
+}
+
+.trending-list .userIcon {
+    grid-row: 1 /-1;
 }
 
 
@@ -144,6 +160,14 @@ input[type=button] {
 .userIcon {
     width: 40px;
     height: 40px;
+}
+
+.sidebar { 
+    font-size: 1.1em;
+}
+
+.sidebar-top {
+    font-size: 1.2em;
 }
 
 .welcome-small {
@@ -192,7 +216,7 @@ input[type=button] {
     color: var(--content-color);
 }
 
-.announcements-list {
+.announcements-list, .trending-list {
     background-color: white;
     border-radius: 10px;
     padding: 30px 30px;
@@ -223,4 +247,8 @@ input[type=button] {
     text-overflow: ellipsis;
     display: -webkit-box;
     overflow: hidden;
+}
+
+.trending-list-item .project {
+    color: var(--content-color);
 }
