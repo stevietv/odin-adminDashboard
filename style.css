@@ -2,6 +2,8 @@
 
 :root {
     --bg-color: rgb(16, 154, 247);
+    --content-color: rgb(82, 82, 82);
+    --content-color-light: rgb(148, 148, 148);
 }
 
 * {
@@ -97,13 +99,29 @@ body {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
     flex: 1;
-    padding: 15px;
+    padding: 30px;
 }
 
 .projects {
     grid-row: 1 / -1;
 }
+
+.projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card-links {
+    display: grid;
+    justify-content: end;
+    grid-auto-flow: column;
+    column-gap: 30px;
+    padding-right: 20px
+}
+
 
 /* Design */
 
@@ -145,4 +163,64 @@ input[type=button] {
     height: 60px;
     grid-row: 1 / -1;
     place-self: center;
+}
+
+.content-header {
+    font-weight: 500;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.project-card {
+    background-color: white;
+    border-left: 8px solid rgb(223, 181, 45);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.project-card-header {
+    font-weight: 600;
+}
+
+.project-card-content {
+    color: var(--content-color);
+    padding-bottom: 20px;
+}
+
+.project-card-links {
+    color: var(--content-color);
+}
+
+.announcements-list {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 30px;
+    font-size: 0.9em;
+}
+
+.announcement-header {
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.announcement:not(:first-child) {
+    border-top: 1px solid var(--content-color-light);
+    padding: 15px 0px;
+    margin: 15px 0px;
+}
+
+.announcement:last-child {
+    margin: -15px 0;
+}
+
+.announcement-content {
+    color: var(--content-color);
+    font-size: 0.85em;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
 }
